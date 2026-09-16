@@ -8,4 +8,16 @@ body {
   max-width: calc( var(--container-x) + var(--container-padding-x) * 2 );
   padding-inline: var(--container-padding-x);
   margin: var(--container-margin-y) auto;
+
+  @media (max-width: 1024px) {
+    & {
+      max-width: 798px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    & {
+      max-width: calc( var(--container-x) / 2 + var(--container-padding-x) * 2 );
+    }
+  }
 }

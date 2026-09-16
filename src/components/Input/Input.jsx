@@ -5,6 +5,9 @@ const Input = (props) => {
     type,
     name,
     placeholder,
+    title,
+    pattern,
+    required
   } = props
 
   return (
@@ -13,6 +16,9 @@ const Input = (props) => {
       type={type}
       name={name}
       placeholder={placeholder}
+      title={title}
+      pattern={pattern}
+      required={required}
     />
   )
 }

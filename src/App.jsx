@@ -1,9 +1,10 @@
 import '@/styles/index.js'
+import Header from '@/components/Header/Header.jsx'
 
 function App() {
   return (
     <>
-      затычка
+      <Header />
     </>
   )
 }

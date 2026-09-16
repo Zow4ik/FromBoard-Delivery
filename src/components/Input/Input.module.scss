@@ -1,0 +1,13 @@
+.input {
+  color: var(--color-main);
+  outline: none;
+  border: 2px solid var(--color-main);
+  border-radius: 4px;
+  width: 100%;
+  padding: 10px;
+  transition: var(--transition);
+
+  &:focus-visible {
+    border: 2px solid var(--color-purple);
+  }
+}

@@ -7,7 +7,7 @@ import Button from '@/components/Button/Button.jsx'
 
 const Header = () => {
   return (
-    <header>
+    <header className={styles.header}>
       <div className={`container ${styles.headerContainer}`}>
         <div className={styles.containerTop}>
           <Logo />

@@ -11,4 +11,20 @@
   width: 100%;
 }
 
-.containerInfo {}
+.containerInfo {
+  display: flex;
+  gap: 25px;
+  position: relative;
+  align-items: center;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 49%;
+    translate: -50%;
+    width: 1px;
+    height: 100%;
+    background-color: var(--color-purple);
+  }
+}

@@ -1,8 +1,10 @@
-import Logo from '@/components/Logo/Logo.jsx'
+import '@/styles/index.js'
 
 function App() {
   return (
-    <>затычка</>
+    <>
+      затычка
+    </>
   )
 }
 

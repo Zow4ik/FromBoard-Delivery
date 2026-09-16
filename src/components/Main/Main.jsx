@@ -1,6 +1,10 @@
+import Welcome from '@/components/Welcome/Welcome.jsx'
+
 const Main = () => {
   return (
-    <main></main>
+    <main>
+      <Welcome />
+    </main>
   )
 }
 

@@ -1,5 +1,9 @@
+import Logo from '@/components/Logo/Logo.jsx'
+
 function App() {
-  return <div>затычка</div>
+  return (
+    <>затычка</>
+  )
 }
 
 export default App

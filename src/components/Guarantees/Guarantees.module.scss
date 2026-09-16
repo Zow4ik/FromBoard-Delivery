@@ -1,0 +1,35 @@
+.section {
+  flex-direction: column;
+  text-align: center;
+}
+
+.text {
+  margin: 12px auto 24px auto;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--color-main);
+  max-width: 760px;
+}
+
+.list {
+  display: grid;
+  gap: 24px;
+  margin-block: 24px 64px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+@media (max-width: 1536px) {
+  .list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .list {
+    grid-template-columns: 1fr;
+  }
+
+  .list {
+    margin-bottom: 40px;
+  }
+}

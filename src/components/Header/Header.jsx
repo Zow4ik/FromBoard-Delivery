@@ -2,6 +2,7 @@ import styles from './Header.module.scss'
 import Logo from '@/components/Logo/Logo.jsx'
 import PriceDelivery from '@/components/PriceDelivery/PriceDelivery.jsx'
 import ContactPhone from '@/components/ContactPhone/ContactPhone.jsx'
+import Menu from '@/components/Menu/Menu.jsx'
 
 const Header = () => {
   return (
@@ -14,7 +15,9 @@ const Header = () => {
             <ContactPhone />
           </div>
         </div>
-        <div className={styles.containerBottom}></div>
+        <div className={styles.containerBottom}>
+          <Menu />
+        </div>
       </div>
     </header>
   )

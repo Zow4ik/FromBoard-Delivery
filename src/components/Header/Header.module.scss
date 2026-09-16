@@ -1,6 +1,9 @@
 .headerContainer {
   display: flex;
   flex-direction: column;
+  gap: 34px;
+  margin-block: 0 var(--container-margin-y);
+  padding-block: 25px;
 }
 
 .containerTop,

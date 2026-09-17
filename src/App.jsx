@@ -5,7 +5,7 @@ import Main from '@/components/Main/Main.jsx'
 function App() {
   return (
     <>
-      <Header />
+      {/*<Header />*/}
       <Main />
     </>
   )

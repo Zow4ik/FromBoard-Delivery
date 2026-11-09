@@ -1,7 +1,7 @@
 import styles from './Header.module.scss'
 import Logo from '@/components/Logo/Logo.jsx'
 import PriceDelivery from '@/components/PriceDelivery/PriceDelivery.jsx'
-import ContactPhone from '@/components/ContactPhone/ContactPhone.jsx'
+import ContactPhone from '@/components/ContactPhone/ContactPhone.js'
 import Menu from '@/components/Menu/Menu.jsx'
 import Button from '@/components/Button/Button.tsx'
 

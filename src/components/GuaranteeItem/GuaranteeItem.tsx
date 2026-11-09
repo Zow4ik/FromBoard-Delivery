@@ -1,7 +1,12 @@
 import styles from './GuaranteeItem.module.scss'
 import Title from '@/components/Title/Title.jsx'
 
-const GuaranteeItem = (props) => {
+interface GuaranteeItemProps {
+  url: string,
+  title: string
+}
+
+const GuaranteeItem = (props: GuaranteeItemProps) => {
   const {
     url,
     title,

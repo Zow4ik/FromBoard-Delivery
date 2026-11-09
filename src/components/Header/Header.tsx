@@ -1,6 +1,6 @@
 import styles from './Header.module.scss'
 import Logo from '@/components/Logo/Logo.tsx'
-import PriceDelivery from '@/components/PriceDelivery/PriceDelivery.jsx'
+import PriceDelivery from '@/components/PriceDelivery/PriceDelivery.tsx'
 import ContactPhone from '@/components/ContactPhone/ContactPhone.js'
 import Menu from '@/components/Menu/Menu.tsx'
 import Button from '@/components/Button/Button.tsx'

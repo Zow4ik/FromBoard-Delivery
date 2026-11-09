@@ -23,7 +23,7 @@ const GuaranteeItem = (props: GuaranteeItemProps) => {
       />
       <Title
         type='h3'
-        weight='900'
+        weight={900}
       >
         {title}
       </Title>

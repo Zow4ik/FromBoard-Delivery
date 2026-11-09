@@ -22,7 +22,7 @@ const Reviews = () => {
 
   return (
     <section className={`container ${styles.section}`}>
-      <Title type='h2' weight='900'>Отзывы</Title>
+      <Title type='h2' weight={900}>Отзывы</Title>
       <Swiper
         className={styles.slider}
         modules={[Navigation, A11y]}

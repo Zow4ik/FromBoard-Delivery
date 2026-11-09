@@ -52,7 +52,7 @@ const Advantages = () => {
 
   return (
     <section className={`container ${styles.section}`}>
-      <Title type='h2' weight='900'>Наши преимущества</Title>
+      <Title type='h2' weight={900}>Наши преимущества</Title>
       <ul className={styles.list}>
         {AdvantagesInfo.map((item) => (
           <AdvantageItem

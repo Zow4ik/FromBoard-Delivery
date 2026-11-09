@@ -26,7 +26,7 @@ const AdvantageItem = (props: AdvantageItemProps) => {
       <div className={styles.content}>
         <Title
           type='h3'
-          weight='900'
+          weight={900}
         >
           {title}
         </Title>

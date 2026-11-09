@@ -18,7 +18,7 @@ const Guarantees = () => {
 
   return (
     <section className={`container ${styles.section}`}>
-      <Title type='h2' weight='900'>
+      <Title type='h2' weight={900}>
         Гарантии качества
       </Title>
       <p className={styles.text}>

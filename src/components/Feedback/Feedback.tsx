@@ -61,7 +61,7 @@ const Feedback = () => {
 
   return (
     <section className={`container ${styles.section}`}>
-      <Title type='h2' weight='900'>Остались вопросы?</Title>
+      <Title type='h2' weight={900}>Остались вопросы?</Title>
       <form
         ref={formRef}
         className={styles.form}

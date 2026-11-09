@@ -44,7 +44,7 @@ const Calculator = () => {
   return (
     <article className={styles.article}>
       <div className={styles.container}>
-        <Title type='h2' weight='700'>
+        <Title type='h2' weight={700}>
           Калькулятор доставки
         </Title>
         <p className={styles.text}>

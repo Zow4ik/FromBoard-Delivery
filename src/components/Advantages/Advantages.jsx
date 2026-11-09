@@ -1,6 +1,6 @@
 import styles from './Advantages.module.scss'
 import Title from '@/components/Title/Title.jsx'
-import AdvantageItem from '@/components/AdvantageItem/AdvantageItem.jsx'
+import AdvantageItem from '@/components/AdvantageItem/AdvantageItem.tsx'
 
 const Advantages = () => {
   const AdvantagesInfo = [

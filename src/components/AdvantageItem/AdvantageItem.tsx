@@ -1,7 +1,13 @@
 import styles from './AdvantageItem.module.scss'
 import Title from '@/components/Title/Title.jsx'
 
-const AdvantageItem = (props) => {
+interface AdvantageItemProps {
+  url: string,
+  title: string,
+  text: string,
+}
+
+const AdvantageItem = (props: AdvantageItemProps) => {
   const {
     url,
     title,

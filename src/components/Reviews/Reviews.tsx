@@ -5,8 +5,13 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import styles from './Reviews.module.scss'
 
+interface SlidersInfo {
+  text: string,
+  author: string,
+}
+
 const Reviews = () => {
-  const slidersInfo = [
+  const slidersInfo: SlidersInfo[] = [
     { text: 'Я заказала последний iPhone из США через ваш сервис, и доставка прошла быстро и без каких‑либо проблем. Гарантии качества и надёжная упаковка сделали мой опыт покупки невероятно позитивным', author: 'Анна' },
     { text: 'lorem1203 lorem1203 lorem1203 lorem1203 lorem1203 lorem1203 lorem1203', author: 'Артем' },
     { text: 'lorem1203 lorem1203 lorem1203 lorem1203 lorem1203 lorem1203 lorem1203', author: 'Василиса' },

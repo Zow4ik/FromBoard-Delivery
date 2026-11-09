@@ -1,5 +1,5 @@
 import styles from './Guarantees.module.scss'
-import Title from '@/components/Title/Title.jsx'
+import Title from '@/components/Title/Title.tsx'
 import Button from '@/components/Button/Button.tsx'
 import GuaranteeItem from '@/components/GuaranteeItem/GuaranteeItem.tsx'
 

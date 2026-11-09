@@ -1,5 +1,5 @@
 import styles from './Welcome.module.scss'
-import Title from '@/components/Title/Title.jsx'
+import Title from '@/components/Title/Title.tsx'
 import Calculator from '@/components/Calculator/Calculator.tsx'
 
 const Welcome = () => {

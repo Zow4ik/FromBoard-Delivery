@@ -1,6 +1,13 @@
 import styles from './Title.module.scss'
+import {type ReactNode} from "react";
 
-const Title = (props) => {
+interface TitleProps {
+  children: ReactNode
+  type: 'h1' | 'h2' | 'h3',
+  weight: number,
+}
+
+const Title = (props: TitleProps) => {
   const {
     children,
     type,

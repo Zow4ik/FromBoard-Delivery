@@ -1,5 +1,5 @@
 import styles from './Advantages.module.scss'
-import Title from '@/components/Title/Title.jsx'
+import Title from '@/components/Title/Title.tsx'
 import AdvantageItem from '@/components/AdvantageItem/AdvantageItem.tsx'
 
 interface AdvantagesInfo {

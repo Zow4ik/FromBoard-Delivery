@@ -1,5 +1,5 @@
 import styles from './GuaranteeItem.module.scss'
-import Title from '@/components/Title/Title.jsx'
+import Title from '@/components/Title/Title.tsx'
 
 interface GuaranteeItemProps {
   url: string,

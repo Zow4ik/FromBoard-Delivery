@@ -1,4 +1,4 @@
-import Title from '@/components/Title/Title.jsx'
+import Title from '@/components/Title/Title.tsx'
 import { Navigation, A11y } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';

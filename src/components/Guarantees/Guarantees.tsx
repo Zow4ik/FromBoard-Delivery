@@ -3,8 +3,13 @@ import Title from '@/components/Title/Title.jsx'
 import Button from '@/components/Button/Button.tsx'
 import GuaranteeItem from '@/components/GuaranteeItem/GuaranteeItem.tsx'
 
+interface GuaranteesInfo {
+  url: string,
+  title: string,
+}
+
 const Guarantees = () => {
-  const GuaranteesInfo = [
+  const guaranteesInfo: GuaranteesInfo[] = [
     { url: '/FromBoard-Delivery/images/document-ru.webp', title: 'Свидетельство о регистрации в РФ' },
     { url: '/FromBoard-Delivery/images/document-us.webp', title: 'Свидетельство о регистрации в США' },
     { url: '/FromBoard-Delivery/images/document-cn.webp', title: 'Свидетельство о регистрации в Китае' },
@@ -22,7 +27,7 @@ const Guarantees = () => {
         на мировом рынке. Мы предоставляем вам надёжность и уверенность
       </p>
       <ul className={styles.list}>
-        {GuaranteesInfo.map((item) => (
+        {guaranteesInfo.map((item) => (
           <GuaranteeItem
             url={item.url}
             title={item.title}

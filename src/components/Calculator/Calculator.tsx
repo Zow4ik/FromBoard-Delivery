@@ -2,12 +2,21 @@ import styles from './Calculator.module.scss'
 import Title from '@/components/Title/Title.jsx'
 import Input from '@/components/Input/Input.jsx'
 import Button from '@/components/Button/Button.tsx'
-import {useRef} from 'react'
+import {type ComponentProps, type SubmitEvent, useRef} from 'react'
+
+interface InputsInfo {
+  type: ComponentProps<'input'>["type"],
+  name: ComponentProps<'input'>["name"],
+  placeholder: string,
+  title: string,
+  pattern: string,
+  inputMode?: string
+}
 
 const Calculator = () => {
-  const formRef = useRef('')
+  const formRef = useRef<HTMLFormElement>(null)
 
-  const inputsInfo = [
+  const inputsInfo: InputsInfo[] = [
     { type: 'text', name: 'nameUser', placeholder: 'Имя', title: 'Только буквы, пробелы и дефисы (мин. 2 символа)', pattern: '^[A-Za-zА-Яа-яЁё\\s\\-]{2,}$' },
     { type: 'email', name: 'email', placeholder: 'Почта', title: 'Введите корректный email (например, mail@example.com)', pattern: '^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$' },
     { type: 'tel', name: 'tel', placeholder: 'Телефон', title: 'Только цифры, пробелы, плюс, скобки и дефисы (10-20 символов)', pattern: '^[0-9\\\\s]{10,20}$' },
@@ -19,8 +28,13 @@ const Calculator = () => {
     { type: 'text', name: 'toCity', placeholder: 'Город доставки', title: 'Только буквы, пробелы и дефисы', pattern: '^[A-Za-zА-Яа-яЁё\\s\\-]+$' },
   ]
 
-  const onSubmit = (event) => {
+  const onSubmit = (event: SubmitEvent<HTMLFormElement>) => {
     event.preventDefault()
+
+    if (!formRef.current) {
+      console.log('ошибка с рефом в Calculator.tsx')
+      return
+    }
 
     const dataForm = new FormData(formRef.current)
     console.log(Object.fromEntries(dataForm))

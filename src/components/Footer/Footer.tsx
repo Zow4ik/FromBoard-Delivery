@@ -1,6 +1,6 @@
 import styles from './Footer.module.scss'
 import Logo from '@/components/Logo/Logo.tsx'
-import Menu from '@/components/Menu/Menu.jsx'
+import Menu from '@/components/Menu/Menu.tsx'
 import ContactPhone from '@/components/ContactPhone/ContactPhone.js'
 
 const Footer = () => {

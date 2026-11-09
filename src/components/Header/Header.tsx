@@ -2,7 +2,7 @@ import styles from './Header.module.scss'
 import Logo from '@/components/Logo/Logo.tsx'
 import PriceDelivery from '@/components/PriceDelivery/PriceDelivery.jsx'
 import ContactPhone from '@/components/ContactPhone/ContactPhone.js'
-import Menu from '@/components/Menu/Menu.jsx'
+import Menu from '@/components/Menu/Menu.tsx'
 import Button from '@/components/Button/Button.tsx'
 
 const Header = () => {

@@ -1,4 +1,4 @@
-import Welcome from '@/components/Welcome/Welcome.jsx'
+import Welcome from '@/components/Welcome/Welcome.tsx'
 import Advantages from '@/components/Advantages/Advantages.tsx'
 import Guarantees from '@/components/Guarantees/Guarantees.tsx'
 import Reviews from '@/components/Reviews/Reviews.tsx'

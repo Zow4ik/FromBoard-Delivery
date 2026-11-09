@@ -6,7 +6,7 @@ const Welcome = () => {
   return (
     <section className={`container ${styles.section}`}>
       <div className={styles.content}>
-        <Title type='h1' weight='900'>
+        <Title type='h1' weight={900}>
           Без проблемная доставка купленных вещей из США, Европы и Азии в Россию
         </Title>
         <p className={styles.text}>

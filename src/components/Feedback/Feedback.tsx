@@ -2,12 +2,20 @@ import styles from './Feedback.module.scss'
 import Title from '@/components/Title/Title.jsx'
 import Input from '@/components/Input/Input.jsx'
 import Button from '@/components/Button/Button.tsx'
-import {useRef} from 'react'
+import { useRef, type SubmitEvent } from 'react'
+
+interface inputsInfo {
+  type: string,
+  name: string,
+  placeholder: string,
+  title: string,
+  pattern: string
+}
 
 const Feedback = () => {
   const formRef = useRef(null)
 
-  const inputsInfo = [
+  const inputsInfo: inputsInfo[] = [
     {
       type: 'text',
       name: 'name',
@@ -38,8 +46,13 @@ const Feedback = () => {
     },
   ]
 
-  const onSubmit = (event) => {
+  const onSubmit = (event: SubmitEvent<HTMLFormElement>) => {
     event.preventDefault()
+
+    if (!formRef.current) {
+      console.log('проблема с рефом в Feedback.jsx')
+      return
+    }
 
     const dataForm = new FormData(formRef.current)
     console.log(Object.fromEntries(dataForm))

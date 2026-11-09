@@ -1,6 +1,16 @@
 import styles from './Input.module.scss'
+import type {ComponentProps} from "react";
 
-const Input = (props) => {
+interface InputProps {
+  type: ComponentProps<'input'>['type'],
+  name: ComponentProps<'input'>['name'],
+  placeholder: string,
+  title: string,
+  pattern: string,
+  required: boolean
+}
+
+const Input = (props: InputProps) => {
   const {
     type,
     name,

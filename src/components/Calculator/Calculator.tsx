@@ -1,6 +1,6 @@
 import styles from './Calculator.module.scss'
 import Title from '@/components/Title/Title.jsx'
-import Input from '@/components/Input/Input.jsx'
+import Input from '@/components/Input/Input.tsx'
 import Button from '@/components/Button/Button.tsx'
 import {type ComponentProps, type SubmitEvent, useRef} from 'react'
 

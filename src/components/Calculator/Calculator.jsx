@@ -1,7 +1,7 @@
 import styles from './Calculator.module.scss'
 import Title from '@/components/Title/Title.jsx'
 import Input from '@/components/Input/Input.jsx'
-import Button from '@/components/Button/Button.jsx'
+import Button from '@/components/Button/Button.tsx'
 import {useRef} from 'react'
 
 const Calculator = () => {

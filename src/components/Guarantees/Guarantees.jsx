@@ -1,6 +1,6 @@
 import styles from './Guarantees.module.scss'
 import Title from '@/components/Title/Title.jsx'
-import Button from '@/components/Button/Button.jsx'
+import Button from '@/components/Button/Button.tsx'
 import GuaranteeItem from '@/components/GuaranteeItem/GuaranteeItem.jsx'
 
 const Guarantees = () => {

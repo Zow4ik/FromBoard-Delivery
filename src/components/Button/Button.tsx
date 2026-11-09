@@ -1,8 +1,14 @@
 import styles from './Button.module.scss'
+import type {ComponentProps, ReactNode} from "react";
 
-const Button = (props) => {
+interface ButtonProps {
+  type: ComponentProps<'button'>['type'],
+  children: ReactNode,
+}
+
+const Button = (props: ButtonProps) => {
   const {
-    type,
+    type = 'submit',
     children,
   } = props
 

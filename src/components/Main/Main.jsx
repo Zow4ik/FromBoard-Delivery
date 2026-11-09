@@ -1,5 +1,5 @@
 import Welcome from '@/components/Welcome/Welcome.jsx'
-import Advantages from '@/components/Advantages/Advantages.jsx'
+import Advantages from '@/components/Advantages/Advantages.tsx'
 import Guarantees from '@/components/Guarantees/Guarantees.jsx'
 import Reviews from '@/components/Reviews/Reviews.jsx'
 import Feedback from '@/components/Feedback/Feedback.jsx'

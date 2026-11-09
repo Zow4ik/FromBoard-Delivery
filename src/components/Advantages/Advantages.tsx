@@ -2,8 +2,14 @@ import styles from './Advantages.module.scss'
 import Title from '@/components/Title/Title.jsx'
 import AdvantageItem from '@/components/AdvantageItem/AdvantageItem.tsx'
 
+interface AdvantagesInfo {
+  url: string,
+  title: string,
+  text: string,
+}
+
 const Advantages = () => {
-  const AdvantagesInfo = [
+  const AdvantagesInfo: AdvantagesInfo[] = [
     {
       url: '/FromBoard-Delivery/images/advantage-1.svg',
       title: 'Растоможка груза',

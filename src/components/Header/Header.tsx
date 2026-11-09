@@ -1,5 +1,5 @@
 import styles from './Header.module.scss'
-import Logo from '@/components/Logo/Logo.jsx'
+import Logo from '@/components/Logo/Logo.tsx'
 import PriceDelivery from '@/components/PriceDelivery/PriceDelivery.jsx'
 import ContactPhone from '@/components/ContactPhone/ContactPhone.js'
 import Menu from '@/components/Menu/Menu.jsx'
